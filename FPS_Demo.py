@@ -44,7 +44,7 @@ cv2.destroyAllWindows()
 # created a *threaded* video stream, allow the camera sensor to warmup,
 # and start the FPS counter
 print("[INFO] sampling THREADED frames from webcam...")
-vs = WebcamVideoStream(src='http://192.168.0.3:8080/video').start()
+vs = WebcamVideoStream(src='http://' + hoststr + '/video').start()
 fps = FPS().start()
 
 # loop over some frames...this time using the threaded stream
